@@ -58,30 +58,31 @@
 //app自定义
 -(void)configAppSetting
 {
+    //导航条
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTintColor:AppThemeColor];
-    
+    [[UINavigationBar appearance] setTintColor:kAppThemeColor];
     NSDictionary *attributesTitle = [NSDictionary dictionaryWithObjectsAndKeys:
-                                     AppThemeColor,NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:19],NSFontAttributeName,nil];
-    [[UINavigationBar appearance]setTitleTextAttributes:attributesTitle];
+                                     kAppThemeColor,NSForegroundColorAttributeName,kAppNavBarFontTitle,NSFontAttributeName,nil];
+    [[UINavigationBar appearance] setTitleTextAttributes:attributesTitle];
     
+    //状态栏
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
-    
+    //nav bar Item
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                AppThemeColor,NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:17],NSFontAttributeName,nil];
-    
+                                kAppThemeColor,NSForegroundColorAttributeName,kAppNavBarFontSub,NSFontAttributeName,nil];
     [[UIBarButtonItem appearance] setTitleTextAttributes:attributes
                                                 forState:UIControlStateNormal];
-    
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-1000, -1000)
                                                          forBarMetrics:UIBarMetricsDefault];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:AppThemeColor, NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:13],NSFontAttributeName, nil] forState:UIControlStateSelected];
-    // set the text color for unselected state
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor], NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:13],NSFontAttributeName, nil] forState:UIControlStateNormal];
+    
+    //tab bar item
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:kAppThemeColor, NSForegroundColorAttributeName,kAppTabBarFontTitle,NSFontAttributeName, nil] forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor], NSForegroundColorAttributeName,kAppTabBarFontTitle,NSFontAttributeName, nil] forState:UIControlStateNormal];
 }
 
 
-
 #pragma mark -- 3rd Part setting
+
+
 @end

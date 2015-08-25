@@ -51,14 +51,14 @@
     
     UIButton *okButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [okButton setTitle:@"确定" forState:UIControlStateNormal];
-    [okButton setTitleColor:ZZBThemeOrangeColor forState:UIControlStateNormal];
+    [okButton setTitleColor:kAppThemeColor forState:UIControlStateNormal];
     [okButton setFrame:CGRectMake(0, 0, 40, 32)];
     [picker setDoneButton:[[UIBarButtonItem alloc] initWithCustomView:okButton]];
 
     
     UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [cancelButton setTitle:@"关闭" forState:UIControlStateNormal];
-    [cancelButton setTitleColor:ZZBThemeOrangeColor forState:UIControlStateNormal];
+    [cancelButton setTitleColor:kAppThemeColor forState:UIControlStateNormal];
     [cancelButton setFrame:CGRectMake(0, 0, 40, 32)];
     [picker setCancelButton:[[UIBarButtonItem alloc] initWithCustomView:cancelButton]];
     

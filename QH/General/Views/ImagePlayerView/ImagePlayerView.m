@@ -83,7 +83,7 @@
     self.pageControl.numberOfPages = self.count;
     self.pageControl.currentPage = 0;
     self.pageControl.pageIndicatorTintColor=[UIColor whiteColor];
-    self.pageControl.currentPageIndicatorTintColor=ZZBThemeOrangeColor;
+    self.pageControl.currentPageIndicatorTintColor=kAppThemeColor;
     [self.pageControl addTarget:self action:@selector(handleClickPageControl:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.pageControl];
     

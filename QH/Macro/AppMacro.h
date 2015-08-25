@@ -81,8 +81,18 @@
  */
 #define kKeyWindow [UIApplication sharedApplication].keyWindow
 
-//---------------------常用颜色------------------
-#define AppThemeColor  colorFromHex(@"00a8b8")
-#define AppAssistColor colorFromHex(@"00a8b8")
+/**
+ *  font
+ */
+#define kBoldFont(_size_) [UIFont boldSystemFontOfSize:_size_]
+#define kSystemFont(_size_) [UIFont systemFontOfSize:_size_]
 
-#define
+//---------------------app配色------------------
+#define kAppThemeColor  colorFromHex(@"00a8b8")
+#define kAppAssistColor colorFromHex(@"00a8b8")
+#define kCellSeperatorLineColor colorFromHex(@"d8d8d8")
+
+//---------------------app字体------------------
+#define kAppNavBarFontTitle kBoldFont(20)
+#define kAppNavBarFontSub kBoldFont(17)
+#define kAppTabBarFontTitle kSystemFont(13)

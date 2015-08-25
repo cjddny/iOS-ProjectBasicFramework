@@ -12,28 +12,28 @@
 //default
 -(void)addBottomLine
 {
-    CALayer *lineLayer=[self layerAddLineUp:FALSE andColor:ZZBSeperatorLineColor.CGColor withLeftOffset:0 withRightOffset:0];
+    CALayer *lineLayer=[self layerAddLineUp:FALSE andColor:kCellSeperatorLineColor.CGColor withLeftOffset:0 withRightOffset:0];
     [self.layer addSublayer:lineLayer];
 }
 
 //头部全覆盖线
 -(void)addTopLine
 {
-    CALayer *lineLayer=[self layerAddLineUp:TRUE andColor:ZZBSeperatorLineColor.CGColor withLeftOffset:0 withRightOffset:0];
+    CALayer *lineLayer=[self layerAddLineUp:TRUE andColor:kCellSeperatorLineColor.CGColor withLeftOffset:0 withRightOffset:0];
     [self.layer addSublayer:lineLayer];
 }
 
 
 -(void)addLeftOffsetLine:(CGFloat)leftOffset
 {
-    CALayer *lineLayer=[self layerAddLineUp:FALSE andColor:ZZBSeperatorLineColor.CGColor withLeftOffset:leftOffset withRightOffset:0];
+    CALayer *lineLayer=[self layerAddLineUp:FALSE andColor:kCellSeperatorLineColor.CGColor withLeftOffset:leftOffset withRightOffset:0];
     [self.layer addSublayer:lineLayer];
 }
 
 //两侧偏移线
 -(void)addBothOffsetLine:(CGFloat)offset
 {
-    CALayer *lineLayer=[self layerAddLineUp:FALSE andColor:ZZBSeperatorLineColor.CGColor withLeftOffset:offset withRightOffset:offset];
+    CALayer *lineLayer=[self layerAddLineUp:FALSE andColor:kCellSeperatorLineColor.CGColor withLeftOffset:offset withRightOffset:offset];
     [self.layer addSublayer:lineLayer];
 }
 

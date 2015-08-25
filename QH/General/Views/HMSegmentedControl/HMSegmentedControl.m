@@ -243,7 +243,7 @@
         
         // the color should be cast to CGColor in order to avoid invalid context on iOS7
 //        UIColor *titleColor = titleAttrs[NSForegroundColorAttributeName];
-        UIColor *titleColor = selected ? ZZBThemeOrangeColor:[UIColor lightGrayColor];
+        UIColor *titleColor = selected ? kAppThemeColor:[UIColor lightGrayColor];
 
         if (titleColor) {
             NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:titleAttrs];

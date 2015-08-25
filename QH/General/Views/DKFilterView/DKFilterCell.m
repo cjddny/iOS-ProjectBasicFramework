@@ -30,7 +30,7 @@
         _paddingBottom = 0;
         _maxViewWidth = 320;
         self.buttonNormalColor = DK_NORMAL_COLOR;
-        self.buttonHighlightColor = ZZBThemeOrangeColor;
+        self.buttonHighlightColor = kAppThemeColor;
     }
     return self;
 }

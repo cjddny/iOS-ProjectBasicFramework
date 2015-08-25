@@ -44,7 +44,7 @@
                                                      animateToInitialState:NO];
     aButton.lineThickness = 2;
     aButton.lineRadius=7;
-    aButton.tintColor = ZZBThemeOrangeColor;
+    aButton.tintColor = kAppThemeColor;
     [aButton addTarget:self
                     action:action
           forControlEvents:UIControlEventTouchUpInside];
