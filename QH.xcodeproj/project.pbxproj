@@ -10,7 +10,6 @@
 		AA8C42740DE7FC2CD5207177 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D149B4AAC610870AB3245861 /* libPods.a */; };
 		D04A7AD21B841C0500819C9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AD11B841C0500819C9D /* main.m */; };
 		D04A7AD51B841C0500819C9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AD41B841C0500819C9D /* AppDelegate.m */; };
-		D04A7AD81B841C0500819C9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AD71B841C0500819C9D /* ViewController.m */; };
 		D04A7ADB1B841C0500819C9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04A7AD91B841C0500819C9D /* Main.storyboard */; };
 		D04A7ADD1B841C0500819C9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04A7ADC1B841C0500819C9D /* Images.xcassets */; };
 		D04A7AE01B841C0500819C9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04A7ADE1B841C0500819C9D /* LaunchScreen.xib */; };
@@ -212,7 +211,6 @@
 		D0BB07A91B8C598000585CAE /* FlexibleAlignButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05E41B8C1DAA00585CAE /* FlexibleAlignButton.m */; };
 		D0BB07AA1B8C598000585CAE /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB066C1B8C49D400585CAE /* MJRefreshAutoStateFooter.m */; };
 		D0BB07AB1B8C598000585CAE /* UIImage+EMGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06441B8C49D400585CAE /* UIImage+EMGIF.m */; };
-		D0BB07AC1B8C598000585CAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AD71B841C0500819C9D /* ViewController.m */; };
 		D0BB07AD1B8C598000585CAE /* INSCircleInfiniteIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB072A1B8C500F00585CAE /* INSCircleInfiniteIndicator.m */; };
 		D0BB07AE1B8C598000585CAE /* INSPullToRefreshBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07241B8C500F00585CAE /* INSPullToRefreshBackgroundView.m */; };
 		D0BB07AF1B8C598000585CAE /* VoiceRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BB61B841F9800819C9D /* VoiceRecordManager.m */; };
@@ -370,6 +368,8 @@
 		D0BB084A1B8C598000585CAE /* cellLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BB06551B8C49D400585CAE /* cellLine@2x.png */; };
 		D0BB08511B8C59D700585CAE /* QH_Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04A7AD01B841C0500819C9D /* QH_Dev.plist */; };
 		D0BB08541B8C5B1100585CAE /* QH_Dis.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0BB08531B8C5B1100585CAE /* QH_Dis.plist */; };
+		D0BB08591B8C63A300585CAE /* LandingTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB08581B8C63A300585CAE /* LandingTabViewController.m */; };
+		D0BB085A1B8C63A300585CAE /* LandingTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB08581B8C63A300585CAE /* LandingTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -390,8 +390,6 @@
 		D04A7AD11B841C0500819C9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D04A7AD31B841C0500819C9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D04A7AD41B841C0500819C9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D04A7AD61B841C0500819C9D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D04A7AD71B841C0500819C9D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D04A7ADA1B841C0500819C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D04A7ADC1B841C0500819C9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D04A7ADF1B841C0500819C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -749,6 +747,8 @@
 		D0BB07451B8C500F00585CAE /* INSPullToRefreshImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = INSPullToRefreshImages.xcassets; sourceTree = "<group>"; };
 		D0BB084F1B8C598000585CAE /* QH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BB08531B8C5B1100585CAE /* QH_Dis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QH_Dis.plist; sourceTree = "<group>"; };
+		D0BB08571B8C63A300585CAE /* LandingTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LandingTabViewController.h; path = Vendors/LandingTabViewController.h; sourceTree = "<group>"; };
+		D0BB08581B8C63A300585CAE /* LandingTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LandingTabViewController.m; path = Vendors/LandingTabViewController.m; sourceTree = "<group>"; };
 		D149B4AAC610870AB3245861 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -833,8 +833,8 @@
 				D04A7BD31B84200E00819C9D /* Vendors */,
 				D04A7AD31B841C0500819C9D /* AppDelegate.h */,
 				D04A7AD41B841C0500819C9D /* AppDelegate.m */,
-				D04A7AD61B841C0500819C9D /* ViewController.h */,
-				D04A7AD71B841C0500819C9D /* ViewController.m */,
+				D0BB08571B8C63A300585CAE /* LandingTabViewController.h */,
+				D0BB08581B8C63A300585CAE /* LandingTabViewController.m */,
 				D04A7AD91B841C0500819C9D /* Main.storyboard */,
 				D04A7ADC1B841C0500819C9D /* Images.xcassets */,
 				D04A7ADE1B841C0500819C9D /* LaunchScreen.xib */,
@@ -2070,9 +2070,9 @@
 				D0BB061A1B8C1DAA00585CAE /* NYSegment.m in Sources */,
 				D0BB06C21B8C49D400585CAE /* UIButton+EMWebCache.m in Sources */,
 				D0BB06221B8C1DAA00585CAE /* FlexibleAlignButton.m in Sources */,
+				D0BB08591B8C63A300585CAE /* LandingTabViewController.m in Sources */,
 				D0BB06D41B8C49D400585CAE /* MJRefreshAutoStateFooter.m in Sources */,
 				D0BB06C31B8C49D400585CAE /* UIImage+EMGIF.m in Sources */,
-				D04A7AD81B841C0500819C9D /* ViewController.m in Sources */,
 				D0BB07491B8C500F00585CAE /* INSCircleInfiniteIndicator.m in Sources */,
 				D0BB07471B8C500F00585CAE /* INSPullToRefreshBackgroundView.m in Sources */,
 				D04A7BCC1B841F9800819C9D /* VoiceRecordManager.m in Sources */,
@@ -2249,9 +2249,9 @@
 				D0BB07A71B8C598000585CAE /* NYSegment.m in Sources */,
 				D0BB07A81B8C598000585CAE /* UIButton+EMWebCache.m in Sources */,
 				D0BB07A91B8C598000585CAE /* FlexibleAlignButton.m in Sources */,
+				D0BB085A1B8C63A300585CAE /* LandingTabViewController.m in Sources */,
 				D0BB07AA1B8C598000585CAE /* MJRefreshAutoStateFooter.m in Sources */,
 				D0BB07AB1B8C598000585CAE /* UIImage+EMGIF.m in Sources */,
-				D0BB07AC1B8C598000585CAE /* ViewController.m in Sources */,
 				D0BB07AD1B8C598000585CAE /* INSCircleInfiniteIndicator.m in Sources */,
 				D0BB07AE1B8C598000585CAE /* INSPullToRefreshBackgroundView.m in Sources */,
 				D0BB07AF1B8C598000585CAE /* VoiceRecordManager.m in Sources */,

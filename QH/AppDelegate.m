@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LandingTabViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,13 @@
 
 @implementation AppDelegate
 
+#pragma mark -- life cycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    [self initDrawer];
     return YES;
 }
 
@@ -42,4 +47,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+#pragma mark -- UI
+- (void)initDrawer
+{
+    self.window.rootViewController = [LandingTabViewController new];
+}
+
+
+#pragma mark -- 3rd Part setting
 @end
