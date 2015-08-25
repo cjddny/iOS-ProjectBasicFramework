@@ -747,7 +747,7 @@
 		D0BB07431B8C500F00585CAE /* INSVinePullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSVinePullToRefresh.m; sourceTree = "<group>"; };
 		D0BB07441B8C500F00585CAE /* INSVinePullToRefresh.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INSVinePullToRefresh.xib; sourceTree = "<group>"; };
 		D0BB07451B8C500F00585CAE /* INSPullToRefreshImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = INSPullToRefreshImages.xcassets; sourceTree = "<group>"; };
-		D0BB084F1B8C598000585CAE /* QH copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QH copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BB084F1B8C598000585CAE /* QH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BB08531B8C5B1100585CAE /* QH_Dis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QH_Dis.plist; sourceTree = "<group>"; };
 		D149B4AAC610870AB3245861 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -816,7 +816,7 @@
 			children = (
 				D04A7ACC1B841C0500819C9D /* QH_Dev.app */,
 				D04A7AE51B841C0500819C9D /* QHTests.xctest */,
-				D0BB084F1B8C598000585CAE /* QH copy.app */,
+				D0BB084F1B8C598000585CAE /* QH.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1885,7 +1885,7 @@
 			);
 			name = QH_Dis;
 			productName = QH;
-			productReference = D0BB084F1B8C598000585CAE /* QH copy.app */;
+			productReference = D0BB084F1B8C598000585CAE /* QH.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1894,6 +1894,7 @@
 		D04A7AC41B841C0500819C9D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QH;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = jwill;
 				TargetAttributes = {
@@ -2517,8 +2518,10 @@
 			baseConfigurationReference = 3B5DEBC3786432A97BADDA0B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2526,6 +2529,7 @@
 					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2534,8 +2538,10 @@
 			baseConfigurationReference = AF6344A016AFB1F507E5AF4D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2543,6 +2549,7 @@
 					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -2585,15 +2592,17 @@
 			baseConfigurationReference = 3B5DEBC3786432A97BADDA0B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QH/Vendors/ZCAddressBook/UMSocial_Sdk_4.2.1",
 					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
 				);
-				PRODUCT_NAME = "QH copy";
+				PRODUCT_NAME = QH;
 			};
 			name = Debug;
 		};
@@ -2602,15 +2611,17 @@
 			baseConfigurationReference = AF6344A016AFB1F507E5AF4D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QH/Vendors/ZCAddressBook/UMSocial_Sdk_4.2.1",
 					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
 				);
-				PRODUCT_NAME = "QH copy";
+				PRODUCT_NAME = QH;
 			};
 			name = Release;
 		};
