@@ -16,7 +16,6 @@
 		D04A7AE01B841C0500819C9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04A7ADE1B841C0500819C9D /* LaunchScreen.xib */; };
 		D04A7AEC1B841C0500819C9D /* QHTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AEB1B841C0500819C9D /* QHTests.m */; };
 		D04A7AFD1B841C8700819C9D /* ConstantsForDev.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AF81B841C8700819C9D /* ConstantsForDev.m */; };
-		D04A7AFE1B841C8700819C9D /* ConstantsForDis.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AF91B841C8700819C9D /* ConstantsForDis.m */; };
 		D04A7B691B841F0800819C9D /* AFHTTPRequestOperationManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B041B841F0800819C9D /* AFHTTPRequestOperationManager+RACSupport.m */; };
 		D04A7B6A1B841F0800819C9D /* AFHTTPSessionManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B061B841F0800819C9D /* AFHTTPSessionManager+RACSupport.m */; };
 		D04A7B6B1B841F0800819C9D /* AFNetworkReachabilityManager+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B081B841F0800819C9D /* AFNetworkReachabilityManager+RAC.m */; };
@@ -189,6 +188,188 @@
 		D0BB07521B8C500F00585CAE /* INSVinePullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07431B8C500F00585CAE /* INSVinePullToRefresh.m */; };
 		D0BB07531B8C500F00585CAE /* INSVinePullToRefresh.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BB07441B8C500F00585CAE /* INSVinePullToRefresh.xib */; };
 		D0BB07541B8C500F00585CAE /* INSPullToRefreshImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BB07451B8C500F00585CAE /* INSPullToRefreshImages.xcassets */; };
+		D0BB07941B8C598000585CAE /* JKAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05AB1B8C1DAA00585CAE /* JKAssetsViewCell.m */; };
+		D0BB07951B8C598000585CAE /* SHSPhoneNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07121B8C4B2800585CAE /* SHSPhoneNumberFormatter.m */; };
+		D0BB07961B8C598000585CAE /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B421B841F0800819C9D /* UIColor+BFPaperColors.m */; };
+		D0BB07971B8C598000585CAE /* UIView+JKPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05B91B8C1DAA00585CAE /* UIView+JKPicker.m */; };
+		D0BB07981B8C598000585CAE /* NSString+MessageInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B321B841F0800819C9D /* NSString+MessageInputView.m */; };
+		D0BB07991B8C598000585CAE /* KSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BA21B841F9800819C9D /* KSLogger.m */; };
+		D0BB079A1B8C598000585CAE /* INSVinePullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07431B8C500F00585CAE /* INSVinePullToRefresh.m */; };
+		D0BB079B1B8C598000585CAE /* NSString+NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B341B841F0800819C9D /* NSString+NSDate.m */; };
+		D0BB079C1B8C598000585CAE /* EMSDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB063C1B8C49D400585CAE /* EMSDWebImagePrefetcher.m */; };
+		D0BB079D1B8C598000585CAE /* UIImage+ImageCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06511B8C49D400585CAE /* UIImage+ImageCompress.m */; };
+		D0BB079E1B8C598000585CAE /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06951B8C49D400585CAE /* pinyin.c */; };
+		D0BB079F1B8C598000585CAE /* UIView+BubbleHub.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B571B841F0800819C9D /* UIView+BubbleHub.m */; };
+		D0BB07A01B8C598000585CAE /* MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05C71B8C1DAA00585CAE /* MHFacebookImageViewer.m */; };
+		D0BB07A11B8C598000585CAE /* ZJSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05ED1B8C1DAA00585CAE /* ZJSwitch.m */; };
+		D0BB07A21B8C598000585CAE /* FileManagerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BA01B841F9800819C9D /* FileManagerHelper.m */; };
+		D0BB07A31B8C598000585CAE /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB068E1B8C49D400585CAE /* TPKeyboardAvoidingTableView.m */; };
+		D0BB07A41B8C598000585CAE /* INSLappsyPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07371B8C500F00585CAE /* INSLappsyPullToRefresh.m */; };
+		D0BB07A51B8C598000585CAE /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB066F1B8C49D400585CAE /* MJRefreshBackGifFooter.m */; };
+		D0BB07A61B8C598000585CAE /* ZCAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06B71B8C49D400585CAE /* ZCAddressBook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0BB07A71B8C598000585CAE /* NYSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05CF1B8C1DAA00585CAE /* NYSegment.m */; };
+		D0BB07A81B8C598000585CAE /* UIButton+EMWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06421B8C49D400585CAE /* UIButton+EMWebCache.m */; };
+		D0BB07A91B8C598000585CAE /* FlexibleAlignButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05E41B8C1DAA00585CAE /* FlexibleAlignButton.m */; };
+		D0BB07AA1B8C598000585CAE /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB066C1B8C49D400585CAE /* MJRefreshAutoStateFooter.m */; };
+		D0BB07AB1B8C598000585CAE /* UIImage+EMGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06441B8C49D400585CAE /* UIImage+EMGIF.m */; };
+		D0BB07AC1B8C598000585CAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AD71B841C0500819C9D /* ViewController.m */; };
+		D0BB07AD1B8C598000585CAE /* INSCircleInfiniteIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB072A1B8C500F00585CAE /* INSCircleInfiniteIndicator.m */; };
+		D0BB07AE1B8C598000585CAE /* INSPullToRefreshBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07241B8C500F00585CAE /* INSPullToRefreshBackgroundView.m */; };
+		D0BB07AF1B8C598000585CAE /* VoiceRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BB61B841F9800819C9D /* VoiceRecordManager.m */; };
+		D0BB07B01B8C598000585CAE /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB066A1B8C49D400585CAE /* MJRefreshAutoNormalFooter.m */; };
+		D0BB07B11B8C598000585CAE /* SHSPhoneNumberFormatter+UserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07101B8C4B2800585CAE /* SHSPhoneNumberFormatter+UserConfig.m */; };
+		D0BB07B21B8C598000585CAE /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06731B8C49D400585CAE /* MJRefreshBackStateFooter.m */; };
+		D0BB07B31B8C598000585CAE /* RMMultipleViewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05DB1B8C1DAA00585CAE /* RMMultipleViewsController.m */; };
+		D0BB07B41B8C598000585CAE /* JKPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05AF1B8C1DAA00585CAE /* JKPhotoBrowser.m */; };
+		D0BB07B51B8C598000585CAE /* MarginTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05C41B8C1DAA00585CAE /* MarginTextfield.m */; };
+		D0BB07B61B8C598000585CAE /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B301B841F0800819C9D /* NSString+MD5.m */; };
+		D0BB07B71B8C598000585CAE /* VersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BB01B841F9800819C9D /* VersionManager.m */; };
+		D0BB07B81B8C598000585CAE /* INSLabelPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB073D1B8C500F00585CAE /* INSLabelPullToRefresh.m */; };
+		D0BB07B91B8C598000585CAE /* AGEmojiKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05711B8C1DAA00585CAE /* AGEmojiKeyBoardView.m */; };
+		D0BB07BA1B8C598000585CAE /* INSDefaultInfiniteIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB072F1B8C500F00585CAE /* INSDefaultInfiniteIndicator.m */; };
+		D0BB07BB1B8C598000585CAE /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB057B1B8C1DAA00585CAE /* City.m */; };
+		D0BB07BC1B8C598000585CAE /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB065F1B8C49D400585CAE /* MJRefreshComponent.m */; };
+		D0BB07BD1B8C598000585CAE /* UIImagePickerController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B4A1B841F0800819C9D /* UIImagePickerController+Block.m */; };
+		D0BB07BE1B8C598000585CAE /* FHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B9E1B841F9800819C9D /* FHColor.m */; };
+		D0BB07BF1B8C598000585CAE /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06821B8C49D400585CAE /* UIScrollView+MJRefresh.m */; };
+		D0BB07C01B8C598000585CAE /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07031B8C4AE000585CAE /* wav.mm */; };
+		D0BB07C11B8C598000585CAE /* NSObject+NetworkDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B231B841F0800819C9D /* NSObject+NetworkDescription.m */; };
+		D0BB07C21B8C598000585CAE /* ConstantsForDis.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AF91B841C8700819C9D /* ConstantsForDis.m */; };
+		D0BB07C31B8C598000585CAE /* NSData+EMImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06401B8C49D400585CAE /* NSData+EMImageContentType.m */; };
+		D0BB07C41B8C598000585CAE /* UIImage+EMWebP.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06481B8C49D400585CAE /* UIImage+EMWebP.m */; };
+		D0BB07C51B8C598000585CAE /* NSObject+INSPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B211B841F0800819C9D /* NSObject+INSPullToRefresh.m */; };
+		D0BB07C61B8C598000585CAE /* DKFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05821B8C1DAA00585CAE /* DKFilterModel.m */; };
+		D0BB07C71B8C598000585CAE /* VoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BB41B841F9800819C9D /* VoiceRecordHelper.m */; };
+		D0BB07C81B8C598000585CAE /* AFURLConnectionOperation+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B0A1B841F0800819C9D /* AFURLConnectionOperation+RACSupport.m */; };
+		D0BB07C91B8C598000585CAE /* NSString+TagsSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B381B841F0800819C9D /* NSString+TagsSwitch.m */; };
+		D0BB07CA1B8C598000585CAE /* JKAssetsGroupsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05A71B8C1DAA00585CAE /* JKAssetsGroupsView.m */; };
+		D0BB07CB1B8C598000585CAE /* UIScrollView+INSPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07261B8C500F00585CAE /* UIScrollView+INSPullToRefresh.m */; };
+		D0BB07CC1B8C598000585CAE /* VoiceConverterManger.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07011B8C4AE000585CAE /* VoiceConverterManger.mm */; };
+		D0BB07CD1B8C598000585CAE /* JKPhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05B11B8C1DAA00585CAE /* JKPhotoBrowserCell.m */; };
+		D0BB07CE1B8C598000585CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AD41B841C0500819C9D /* AppDelegate.m */; };
+		D0BB07CF1B8C598000585CAE /* UIImageView+MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05CC1B8C1DAA00585CAE /* UIImageView+MHFacebookImageViewer.m */; };
+		D0BB07D01B8C598000585CAE /* ZZBStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05EF1B8C1DAA00585CAE /* ZZBStateView.m */; };
+		D0BB07D11B8C598000585CAE /* RecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05EA1B8C1DAA00585CAE /* RecordHUD.m */; };
+		D0BB07D21B8C598000585CAE /* NSNotification+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B1C1B841F0800819C9D /* NSNotification+Helper.m */; };
+		D0BB07D31B8C598000585CAE /* EMSDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06391B8C49D400585CAE /* EMSDWebImageManager.m */; };
+		D0BB07D41B8C598000585CAE /* ZZBMJRefrshHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BBA1B841F9800819C9D /* ZZBMJRefrshHelper.m */; };
+		D0BB07D51B8C598000585CAE /* EMSDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06371B8C49D400585CAE /* EMSDWebImageDownloaderOperation.m */; };
+		D0BB07D61B8C598000585CAE /* INSTwitterPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07401B8C500F00585CAE /* INSTwitterPullToRefresh.m */; };
+		D0BB07D71B8C598000585CAE /* JKPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05B31B8C1DAA00585CAE /* JKPromptView.m */; };
+		D0BB07D81B8C598000585CAE /* SHSFlagAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB070B1B8C4B2800585CAE /* SHSFlagAccessoryView.m */; };
+		D0BB07D91B8C598000585CAE /* NYSegmentIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05D31B8C1DAA00585CAE /* NYSegmentIndicator.m */; };
+		D0BB07DA1B8C598000585CAE /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05D81B8C1DAA00585CAE /* PlaceholderTextView.m */; };
+		D0BB07DB1B8C598000585CAE /* DKFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05861B8C1DAA00585CAE /* DKFilterView.m */; };
+		D0BB07DC1B8C598000585CAE /* JKAssetsThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05A91B8C1DAA00585CAE /* JKAssetsThumbnailView.m */; };
+		D0BB07DD1B8C598000585CAE /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B361B841F0800819C9D /* NSString+PJR.m */; };
+		D0BB07DE1B8C598000585CAE /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB068A1B8C49D400585CAE /* TPKeyboardAvoidingCollectionView.m */; };
+		D0BB07DF1B8C598000585CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7AD11B841C0500819C9D /* main.m */; };
+		D0BB07E01B8C598000585CAE /* NSMutableDictionary+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B171B841F0800819C9D /* NSMutableDictionary+KVO.m */; };
+		D0BB07E11B8C598000585CAE /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BB21B841F9800819C9D /* ViewControllerManager.m */; };
+		D0BB07E21B8C598000585CAE /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05BC1B8C1DAA00585CAE /* ImagePlayerView.m */; };
+		D0BB07E31B8C598000585CAE /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB067A1B8C49D400585CAE /* MJRefreshStateHeader.m */; };
+		D0BB07E41B8C598000585CAE /* NSString+CJStringValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B2C1B841F0800819C9D /* NSString+CJStringValidator.m */; };
+		D0BB07E51B8C598000585CAE /* JKAssetsGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05A51B8C1DAA00585CAE /* JKAssetsGroupCell.m */; };
+		D0BB07E61B8C598000585CAE /* JTImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05BF1B8C1DAA00585CAE /* JTImageLabel.m */; };
+		D0BB07E71B8C598000585CAE /* UIViewController+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B641B841F0800819C9D /* UIViewController+Login.m */; };
+		D0BB07E81B8C598000585CAE /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B591B841F0800819C9D /* UIView+Extension.m */; };
+		D0BB07E91B8C598000585CAE /* NSString+TrimingWhitespace.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B3A1B841F0800819C9D /* NSString+TrimingWhitespace.m */; };
+		D0BB07EA1B8C598000585CAE /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06681B8C49D400585CAE /* MJRefreshAutoGifFooter.m */; };
+		D0BB07EB1B8C598000585CAE /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06761B8C49D400585CAE /* MJRefreshGifHeader.m */; };
+		D0BB07EC1B8C598000585CAE /* SHSPhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07141B8C4B2800585CAE /* SHSPhoneTextField.m */; };
+		D0BB07ED1B8C598000585CAE /* UIView+SeperatorLine.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B5B1B841F0800819C9D /* UIView+SeperatorLine.m */; };
+		D0BB07EE1B8C598000585CAE /* RACSubscriber+AFProgressCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B0D1B841F0800819C9D /* RACSubscriber+AFProgressCallbacks.m */; };
+		D0BB07EF1B8C598000585CAE /* UIImageViewAligned.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06931B8C49D400585CAE /* UIImageViewAligned.m */; };
+		D0BB07F01B8C598000585CAE /* UIView+ZZBInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B5D1B841F0800819C9D /* UIView+ZZBInputBar.m */; };
+		D0BB07F11B8C598000585CAE /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06631B8C49D400585CAE /* MJRefreshHeader.m */; };
+		D0BB07F21B8C598000585CAE /* JKImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05AD1B8C1DAA00585CAE /* JKImagePickerController.m */; };
+		D0BB07F31B8C598000585CAE /* UIImageView+EMWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB064C1B8C49D400585CAE /* UIImageView+EMWebCache.m */; };
+		D0BB07F41B8C598000585CAE /* UIImage+EMMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06461B8C49D400585CAE /* UIImage+EMMultiFormat.m */; };
+		D0BB07F51B8C598000585CAE /* NYSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05D11B8C1DAA00585CAE /* NYSegmentedControl.m */; };
+		D0BB07F61B8C598000585CAE /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB068C1B8C49D400585CAE /* TPKeyboardAvoidingScrollView.m */; };
+		D0BB07F71B8C598000585CAE /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B3C1B841F0800819C9D /* NSString+URLEncode.m */; };
+		D0BB07F81B8C598000585CAE /* EMSDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06311B8C49D400585CAE /* EMSDWebImageCompat.m */; };
+		D0BB07F91B8C598000585CAE /* JKAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05A31B8C1DAA00585CAE /* JKAssetsCollectionFooterView.m */; };
+		D0BB07FA1B8C598000585CAE /* UIColor+RGBValues.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B441B841F0800819C9D /* UIColor+RGBValues.m */; };
+		D0BB07FB1B8C598000585CAE /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06F61B8C4AE000585CAE /* amrFileCodec.mm */; };
+		D0BB07FC1B8C598000585CAE /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B471B841F0800819C9D /* UIImage+Tint.m */; };
+		D0BB07FD1B8C598000585CAE /* JRNLocalNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B1A1B841F0800819C9D /* JRNLocalNotificationCenter.m */; };
+		D0BB07FE1B8C598000585CAE /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B121B841F0800819C9D /* NSDate+Utilities.m */; };
+		D0BB07FF1B8C598000585CAE /* SHSPhoneLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB070E1B8C4B2800585CAE /* SHSPhoneLogic.m */; };
+		D0BB08001B8C598000585CAE /* AGEmojiPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05731B8C1DAA00585CAE /* AGEmojiPageView.m */; };
+		D0BB08011B8C598000585CAE /* DKFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05801B8C1DAA00585CAE /* DKFilterCell.m */; };
+		D0BB08021B8C598000585CAE /* INSPinterestPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB073A1B8C500F00585CAE /* INSPinterestPullToRefresh.m */; };
+		D0BB08031B8C598000585CAE /* UIViewController+UIBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B681B841F0800819C9D /* UIViewController+UIBarButtonItem.m */; };
+		D0BB08041B8C598000585CAE /* UILabel+LabelAutoLenght.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B4D1B841F0800819C9D /* UILabel+LabelAutoLenght.m */; };
+		D0BB08051B8C598000585CAE /* AudioPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B9A1B841F9800819C9D /* AudioPlayerHelper.m */; };
+		D0BB08061B8C598000585CAE /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05771B8C1DAA00585CAE /* Area.m */; };
+		D0BB08071B8C598000585CAE /* INSInfiniteScrollBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07221B8C500F00585CAE /* INSInfiniteScrollBackgroundView.m */; };
+		D0BB08081B8C598000585CAE /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B541B841F0800819C9D /* UITableView+FDTemplateLayoutCell.m */; };
+		D0BB08091B8C598000585CAE /* NYSegmentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05D51B8C1DAA00585CAE /* NYSegmentLabel.m */; };
+		D0BB080A1B8C598000585CAE /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB065B1B8C49D400585CAE /* MJRefreshAutoFooter.m */; };
+		D0BB080B1B8C598000585CAE /* NSDictionary+MM.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B151B841F0800819C9D /* NSDictionary+MM.m */; };
+		D0BB080C1B8C598000585CAE /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB067E1B8C49D400585CAE /* MJRefreshConst.m */; };
+		D0BB080D1B8C598000585CAE /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06841B8C49D400585CAE /* UIView+MJExtension.m */; };
+		D0BB080E1B8C598000585CAE /* UITableViewController+UIActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B601B841F0800819C9D /* UITableViewController+UIActivityIndicatorView.m */; };
+		D0BB080F1B8C598000585CAE /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06871B8C49D400585CAE /* MZTimerLabel.m */; };
+		D0BB08101B8C598000585CAE /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06781B8C49D400585CAE /* MJRefreshNormalHeader.m */; };
+		D0BB08111B8C598000585CAE /* UIViewController+SVHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B661B841F0800819C9D /* UIViewController+SVHUD.m */; };
+		D0BB08121B8C598000585CAE /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05981B8C1DAA00585CAE /* HMSegmentedControl.m */; };
+		D0BB08131B8C598000585CAE /* INSCirclePullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB072C1B8C500F00585CAE /* INSCirclePullToRefresh.m */; };
+		D0BB08141B8C598000585CAE /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B621B841F0800819C9D /* UIViewController+KNSemiModal.m */; };
+		D0BB08151B8C598000585CAE /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06611B8C49D400585CAE /* MJRefreshFooter.m */; };
+		D0BB08161B8C598000585CAE /* AreaPickerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05791B8C1DAA00585CAE /* AreaPickerControl.m */; };
+		D0BB08171B8C598000585CAE /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B251B841F0800819C9D /* NSObject+ObjectMap.m */; };
+		D0BB08181B8C598000585CAE /* UIButton+ImageWithLable.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B3F1B841F0800819C9D /* UIButton+ImageWithLable.m */; };
+		D0BB08191B8C598000585CAE /* JKAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05A11B8C1DAA00585CAE /* JKAssets.m */; };
+		D0BB081A1B8C598000585CAE /* AFHTTPSessionManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B061B841F0800819C9D /* AFHTTPSessionManager+RACSupport.m */; };
+		D0BB081B1B8C598000585CAE /* EMSDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06351B8C49D400585CAE /* EMSDWebImageDownloader.m */; };
+		D0BB081C1B8C598000585CAE /* TTGlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05E71B8C1DAA00585CAE /* TTGlobalUICommon.m */; };
+		D0BB081D1B8C598000585CAE /* PhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05B71B8C1DAA00585CAE /* PhotoAlbumManager.m */; };
+		D0BB081E1B8C598000585CAE /* UILocalNotification+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BA71B841F9800819C9D /* UILocalNotification+Helpers.m */; };
+		D0BB081F1B8C598000585CAE /* UIApplication+LocalNotificationsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7BA51B841F9800819C9D /* UIApplication+LocalNotificationsUtils.m */; };
+		D0BB08201B8C598000585CAE /* MarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05C11B8C1DAA00585CAE /* MarginLabel.m */; };
+		D0BB08221B8C598000585CAE /* UIView+EMWebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB064E1B8C49D400585CAE /* UIView+EMWebCacheOperation.m */; };
+		D0BB08231B8C598000585CAE /* LCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06571B8C49D400585CAE /* LCActionSheet.m */; };
+		D0BB08241B8C598000585CAE /* NSString+IdCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B2E1B841F0800819C9D /* NSString+IdCheck.m */; };
+		D0BB08251B8C598000585CAE /* EMSDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB062F1B8C49D400585CAE /* EMSDImageCache.m */; };
+		D0BB08261B8C598000585CAE /* JKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05B51B8C1DAA00585CAE /* JKUtil.m */; };
+		D0BB08271B8C598000585CAE /* MKAnnotationView+EMWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB063E1B8C49D400585CAE /* MKAnnotationView+EMWebCache.m */; };
+		D0BB08281B8C598000585CAE /* DKFilterSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05841B8C1DAA00585CAE /* DKFilterSectionHeaderView.m */; };
+		D0BB08291B8C598000585CAE /* UIScrollView+UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B511B841F0800819C9D /* UIScrollView+UITouch.m */; };
+		D0BB082A1B8C598000585CAE /* INSDefaultPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07311B8C500F00585CAE /* INSDefaultPullToRefresh.m */; };
+		D0BB082B1B8C598000585CAE /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06711B8C49D400585CAE /* MJRefreshBackNormalFooter.m */; };
+		D0BB082C1B8C598000585CAE /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB065D1B8C49D400585CAE /* MJRefreshBackFooter.m */; };
+		D0BB082D1B8C598000585CAE /* EMSDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06331B8C49D400585CAE /* EMSDWebImageDecoder.m */; };
+		D0BB082E1B8C598000585CAE /* AFHTTPRequestOperationManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B041B841F0800819C9D /* AFHTTPRequestOperationManager+RACSupport.m */; };
+		D0BB082F1B8C598000585CAE /* INSLappsyInfiniteIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB07351B8C500F00585CAE /* INSLappsyInfiniteIndicator.m */; };
+		D0BB08301B8C598000585CAE /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB057D1B8C1DAA00585CAE /* Province.m */; };
+		D0BB08311B8C598000585CAE /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B981B841F9800819C9D /* AccountManager.m */; };
+		D0BB08321B8C598000585CAE /* NSObject+TextLenght.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B271B841F0800819C9D /* NSObject+TextLenght.m */; };
+		D0BB08331B8C598000585CAE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06901B8C49D400585CAE /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		D0BB08341B8C598000585CAE /* AFNetworkReachabilityManager+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B081B841F0800819C9D /* AFNetworkReachabilityManager+RAC.m */; };
+		D0BB08351B8C598000585CAE /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB06801B8C49D400585CAE /* UIScrollView+MJExtension.m */; };
+		D0BB08361B8C598000585CAE /* NSString+AvatarString.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A7B2A1B841F0800819C9D /* NSString+AvatarString.m */; };
+		D0BB08371B8C598000585CAE /* UIImageView+EMHighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB064A1B8C49D400585CAE /* UIImageView+EMHighlightedWebCache.m */; };
+		D0BB08381B8C598000585CAE /* DWURecyclingAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BB05891B8C1DAA00585CAE /* DWURecyclingAlert.m */; };
+		D0BB083A1B8C598000585CAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D149B4AAC610870AB3245861 /* libPods.a */; };
+		D0BB083B1B8C598000585CAE /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BB06F81B8C4AE000585CAE /* libopencore-amrnb.a */; };
+		D0BB083C1B8C598000585CAE /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BB06F91B8C4AE000585CAE /* libopencore-amrwb.a */; };
+		D0BB083E1B8C598000585CAE /* Done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BB05CA1B8C1DAA00585CAE /* Done@2x.png */; };
+		D0BB083F1B8C598000585CAE /* INSPullToRefreshImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BB07451B8C500F00585CAE /* INSPullToRefreshImages.xcassets */; };
+		D0BB08401B8C598000585CAE /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0BB067B1B8C49D400585CAE /* MJRefresh.bundle */; };
+		D0BB08411B8C598000585CAE /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BB059D1B8C1DAA00585CAE /* ImagesPicker.xcassets */; };
+		D0BB08421B8C598000585CAE /* Done.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BB05C91B8C1DAA00585CAE /* Done.png */; };
+		D0BB08431B8C598000585CAE /* EmojisList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0BB05741B8C1DAA00585CAE /* EmojisList.plist */; };
+		D0BB08441B8C598000585CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04A7AD91B841C0500819C9D /* Main.storyboard */; };
+		D0BB08451B8C598000585CAE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04A7ADE1B841C0500819C9D /* LaunchScreen.xib */; };
+		D0BB08461B8C598000585CAE /* bgImage_HL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BB06541B8C49D400585CAE /* bgImage_HL@2x.png */; };
+		D0BB08471B8C598000585CAE /* INSVinePullToRefresh.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0BB07441B8C500F00585CAE /* INSVinePullToRefresh.xib */; };
+		D0BB08481B8C598000585CAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04A7ADC1B841C0500819C9D /* Images.xcassets */; };
+		D0BB08491B8C598000585CAE /* JKImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0BB059B1B8C1DAA00585CAE /* JKImagePickerController.strings */; };
+		D0BB084A1B8C598000585CAE /* cellLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BB06551B8C49D400585CAE /* cellLine@2x.png */; };
+		D0BB08511B8C59D700585CAE /* QH_Dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04A7AD01B841C0500819C9D /* QH_Dev.plist */; };
+		D0BB08541B8C5B1100585CAE /* QH_Dis.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0BB08531B8C5B1100585CAE /* QH_Dis.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,8 +385,8 @@
 /* Begin PBXFileReference section */
 		3B5DEBC3786432A97BADDA0B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AF6344A016AFB1F507E5AF4D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D04A7ACC1B841C0500819C9D /* QH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QH.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D04A7AD01B841C0500819C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D04A7ACC1B841C0500819C9D /* QH_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QH_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04A7AD01B841C0500819C9D /* QH_Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QH_Dev.plist; sourceTree = "<group>"; };
 		D04A7AD11B841C0500819C9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D04A7AD31B841C0500819C9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D04A7AD41B841C0500819C9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -566,6 +747,8 @@
 		D0BB07431B8C500F00585CAE /* INSVinePullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSVinePullToRefresh.m; sourceTree = "<group>"; };
 		D0BB07441B8C500F00585CAE /* INSVinePullToRefresh.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INSVinePullToRefresh.xib; sourceTree = "<group>"; };
 		D0BB07451B8C500F00585CAE /* INSPullToRefreshImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = INSPullToRefreshImages.xcassets; sourceTree = "<group>"; };
+		D0BB084F1B8C598000585CAE /* QH copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QH copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BB08531B8C5B1100585CAE /* QH_Dis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QH_Dis.plist; sourceTree = "<group>"; };
 		D149B4AAC610870AB3245861 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -584,6 +767,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BB08391B8C598000585CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BB083A1B8C598000585CAE /* libPods.a in Frameworks */,
+				D0BB083B1B8C598000585CAE /* libopencore-amrnb.a in Frameworks */,
+				D0BB083C1B8C598000585CAE /* libopencore-amrwb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,8 +814,9 @@
 		D04A7ACD1B841C0500819C9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D04A7ACC1B841C0500819C9D /* QH.app */,
+				D04A7ACC1B841C0500819C9D /* QH_Dev.app */,
 				D04A7AE51B841C0500819C9D /* QHTests.xctest */,
+				D0BB084F1B8C598000585CAE /* QH copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -652,8 +846,9 @@
 		D04A7ACF1B841C0500819C9D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0BB08531B8C5B1100585CAE /* QH_Dis.plist */,
+				D04A7AD01B841C0500819C9D /* QH_Dev.plist */,
 				D0BB056D1B8C1A9B00585CAE /* QH-Prefix.pch */,
-				D04A7AD01B841C0500819C9D /* Info.plist */,
 				D04A7AD11B841C0500819C9D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1637,9 +1832,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D04A7ACB1B841C0500819C9D /* QH */ = {
+		D04A7ACB1B841C0500819C9D /* QH_Dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D04A7AEF1B841C0500819C9D /* Build configuration list for PBXNativeTarget "QH" */;
+			buildConfigurationList = D04A7AEF1B841C0500819C9D /* Build configuration list for PBXNativeTarget "QH_Dev" */;
 			buildPhases = (
 				E9399F6A76DF57350DCBADB8 /* Check Pods Manifest.lock */,
 				D04A7AC81B841C0500819C9D /* Sources */,
@@ -1651,9 +1846,9 @@
 			);
 			dependencies = (
 			);
-			name = QH;
+			name = QH_Dev;
 			productName = QH;
-			productReference = D04A7ACC1B841C0500819C9D /* QH.app */;
+			productReference = D04A7ACC1B841C0500819C9D /* QH_Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D04A7AE41B841C0500819C9D /* QHTests */ = {
@@ -1673,6 +1868,25 @@
 			productName = QHTests;
 			productReference = D04A7AE51B841C0500819C9D /* QHTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0BB07911B8C598000585CAE /* QH_Dis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BB084C1B8C598000585CAE /* Build configuration list for PBXNativeTarget "QH_Dis" */;
+			buildPhases = (
+				D0BB07921B8C598000585CAE /* Check Pods Manifest.lock */,
+				D0BB07931B8C598000585CAE /* Sources */,
+				D0BB08391B8C598000585CAE /* Frameworks */,
+				D0BB083D1B8C598000585CAE /* Resources */,
+				D0BB084B1B8C598000585CAE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QH_Dis;
+			productName = QH;
+			productReference = D0BB084F1B8C598000585CAE /* QH copy.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -1706,8 +1920,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D04A7ACB1B841C0500819C9D /* QH */,
+				D04A7ACB1B841C0500819C9D /* QH_Dev */,
 				D04A7AE41B841C0500819C9D /* QHTests */,
+				D0BB07911B8C598000585CAE /* QH_Dis */,
 			);
 		};
 /* End PBXProject section */
@@ -1722,6 +1937,7 @@
 				D0BB06DB1B8C49D400585CAE /* MJRefresh.bundle in Resources */,
 				D0BB06041B8C1DAA00585CAE /* ImagesPicker.xcassets in Resources */,
 				D0BB06171B8C1DAA00585CAE /* Done.png in Resources */,
+				D0BB08511B8C59D700585CAE /* QH_Dev.plist in Resources */,
 				D0BB05F31B8C1DAA00585CAE /* EmojisList.plist in Resources */,
 				D04A7ADB1B841C0500819C9D /* Main.storyboard in Resources */,
 				D04A7AE01B841C0500819C9D /* LaunchScreen.xib in Resources */,
@@ -1740,10 +1956,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0BB083D1B8C598000585CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BB083E1B8C598000585CAE /* Done@2x.png in Resources */,
+				D0BB083F1B8C598000585CAE /* INSPullToRefreshImages.xcassets in Resources */,
+				D0BB08401B8C598000585CAE /* MJRefresh.bundle in Resources */,
+				D0BB08411B8C598000585CAE /* ImagesPicker.xcassets in Resources */,
+				D0BB08541B8C5B1100585CAE /* QH_Dis.plist in Resources */,
+				D0BB08421B8C598000585CAE /* Done.png in Resources */,
+				D0BB08431B8C598000585CAE /* EmojisList.plist in Resources */,
+				D0BB08441B8C598000585CAE /* Main.storyboard in Resources */,
+				D0BB08451B8C598000585CAE /* LaunchScreen.xib in Resources */,
+				D0BB08461B8C598000585CAE /* bgImage_HL@2x.png in Resources */,
+				D0BB08471B8C598000585CAE /* INSVinePullToRefresh.xib in Resources */,
+				D0BB08481B8C598000585CAE /* Images.xcassets in Resources */,
+				D0BB08491B8C598000585CAE /* JKImagePickerController.strings in Resources */,
+				D0BB084A1B8C598000585CAE /* cellLine@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		23BE4644BAF65B503D29CC84 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BB07921B8C598000585CAE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BB084B1B8C598000585CAE /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1826,7 +2093,6 @@
 				D0BB06DE1B8C49D400585CAE /* UIScrollView+MJRefresh.m in Sources */,
 				D0BB07081B8C4AE000585CAE /* wav.mm in Sources */,
 				D04A7B761B841F0800819C9D /* NSObject+NetworkDescription.m in Sources */,
-				D04A7AFE1B841C8700819C9D /* ConstantsForDis.m in Sources */,
 				D0BB06C11B8C49D400585CAE /* NSData+EMImageContentType.m in Sources */,
 				D0BB06C51B8C49D400585CAE /* UIImage+EMWebP.m in Sources */,
 				D04A7B751B841F0800819C9D /* NSObject+INSPullToRefresh.m in Sources */,
@@ -1956,12 +2222,183 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0BB07931B8C598000585CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BB07941B8C598000585CAE /* JKAssetsViewCell.m in Sources */,
+				D0BB07951B8C598000585CAE /* SHSPhoneNumberFormatter.m in Sources */,
+				D0BB07961B8C598000585CAE /* UIColor+BFPaperColors.m in Sources */,
+				D0BB07971B8C598000585CAE /* UIView+JKPicker.m in Sources */,
+				D0BB07981B8C598000585CAE /* NSString+MessageInputView.m in Sources */,
+				D0BB07991B8C598000585CAE /* KSLogger.m in Sources */,
+				D0BB079A1B8C598000585CAE /* INSVinePullToRefresh.m in Sources */,
+				D0BB079B1B8C598000585CAE /* NSString+NSDate.m in Sources */,
+				D0BB079C1B8C598000585CAE /* EMSDWebImagePrefetcher.m in Sources */,
+				D0BB079D1B8C598000585CAE /* UIImage+ImageCompress.m in Sources */,
+				D0BB079E1B8C598000585CAE /* pinyin.c in Sources */,
+				D0BB079F1B8C598000585CAE /* UIView+BubbleHub.m in Sources */,
+				D0BB07A01B8C598000585CAE /* MHFacebookImageViewer.m in Sources */,
+				D0BB07A11B8C598000585CAE /* ZJSwitch.m in Sources */,
+				D0BB07A21B8C598000585CAE /* FileManagerHelper.m in Sources */,
+				D0BB07A31B8C598000585CAE /* TPKeyboardAvoidingTableView.m in Sources */,
+				D0BB07A41B8C598000585CAE /* INSLappsyPullToRefresh.m in Sources */,
+				D0BB07A51B8C598000585CAE /* MJRefreshBackGifFooter.m in Sources */,
+				D0BB07A61B8C598000585CAE /* ZCAddressBook.m in Sources */,
+				D0BB07A71B8C598000585CAE /* NYSegment.m in Sources */,
+				D0BB07A81B8C598000585CAE /* UIButton+EMWebCache.m in Sources */,
+				D0BB07A91B8C598000585CAE /* FlexibleAlignButton.m in Sources */,
+				D0BB07AA1B8C598000585CAE /* MJRefreshAutoStateFooter.m in Sources */,
+				D0BB07AB1B8C598000585CAE /* UIImage+EMGIF.m in Sources */,
+				D0BB07AC1B8C598000585CAE /* ViewController.m in Sources */,
+				D0BB07AD1B8C598000585CAE /* INSCircleInfiniteIndicator.m in Sources */,
+				D0BB07AE1B8C598000585CAE /* INSPullToRefreshBackgroundView.m in Sources */,
+				D0BB07AF1B8C598000585CAE /* VoiceRecordManager.m in Sources */,
+				D0BB07B01B8C598000585CAE /* MJRefreshAutoNormalFooter.m in Sources */,
+				D0BB07B11B8C598000585CAE /* SHSPhoneNumberFormatter+UserConfig.m in Sources */,
+				D0BB07B21B8C598000585CAE /* MJRefreshBackStateFooter.m in Sources */,
+				D0BB07B31B8C598000585CAE /* RMMultipleViewsController.m in Sources */,
+				D0BB07B41B8C598000585CAE /* JKPhotoBrowser.m in Sources */,
+				D0BB07B51B8C598000585CAE /* MarginTextfield.m in Sources */,
+				D0BB07B61B8C598000585CAE /* NSString+MD5.m in Sources */,
+				D0BB07B71B8C598000585CAE /* VersionManager.m in Sources */,
+				D0BB07B81B8C598000585CAE /* INSLabelPullToRefresh.m in Sources */,
+				D0BB07B91B8C598000585CAE /* AGEmojiKeyBoardView.m in Sources */,
+				D0BB07BA1B8C598000585CAE /* INSDefaultInfiniteIndicator.m in Sources */,
+				D0BB07BB1B8C598000585CAE /* City.m in Sources */,
+				D0BB07BC1B8C598000585CAE /* MJRefreshComponent.m in Sources */,
+				D0BB07BD1B8C598000585CAE /* UIImagePickerController+Block.m in Sources */,
+				D0BB07BE1B8C598000585CAE /* FHColor.m in Sources */,
+				D0BB07BF1B8C598000585CAE /* UIScrollView+MJRefresh.m in Sources */,
+				D0BB07C01B8C598000585CAE /* wav.mm in Sources */,
+				D0BB07C11B8C598000585CAE /* NSObject+NetworkDescription.m in Sources */,
+				D0BB07C21B8C598000585CAE /* ConstantsForDis.m in Sources */,
+				D0BB07C31B8C598000585CAE /* NSData+EMImageContentType.m in Sources */,
+				D0BB07C41B8C598000585CAE /* UIImage+EMWebP.m in Sources */,
+				D0BB07C51B8C598000585CAE /* NSObject+INSPullToRefresh.m in Sources */,
+				D0BB07C61B8C598000585CAE /* DKFilterModel.m in Sources */,
+				D0BB07C71B8C598000585CAE /* VoiceRecordHelper.m in Sources */,
+				D0BB07C81B8C598000585CAE /* AFURLConnectionOperation+RACSupport.m in Sources */,
+				D0BB07C91B8C598000585CAE /* NSString+TagsSwitch.m in Sources */,
+				D0BB07CA1B8C598000585CAE /* JKAssetsGroupsView.m in Sources */,
+				D0BB07CB1B8C598000585CAE /* UIScrollView+INSPullToRefresh.m in Sources */,
+				D0BB07CC1B8C598000585CAE /* VoiceConverterManger.mm in Sources */,
+				D0BB07CD1B8C598000585CAE /* JKPhotoBrowserCell.m in Sources */,
+				D0BB07CE1B8C598000585CAE /* AppDelegate.m in Sources */,
+				D0BB07CF1B8C598000585CAE /* UIImageView+MHFacebookImageViewer.m in Sources */,
+				D0BB07D01B8C598000585CAE /* ZZBStateView.m in Sources */,
+				D0BB07D11B8C598000585CAE /* RecordHUD.m in Sources */,
+				D0BB07D21B8C598000585CAE /* NSNotification+Helper.m in Sources */,
+				D0BB07D31B8C598000585CAE /* EMSDWebImageManager.m in Sources */,
+				D0BB07D41B8C598000585CAE /* ZZBMJRefrshHelper.m in Sources */,
+				D0BB07D51B8C598000585CAE /* EMSDWebImageDownloaderOperation.m in Sources */,
+				D0BB07D61B8C598000585CAE /* INSTwitterPullToRefresh.m in Sources */,
+				D0BB07D71B8C598000585CAE /* JKPromptView.m in Sources */,
+				D0BB07D81B8C598000585CAE /* SHSFlagAccessoryView.m in Sources */,
+				D0BB07D91B8C598000585CAE /* NYSegmentIndicator.m in Sources */,
+				D0BB07DA1B8C598000585CAE /* PlaceholderTextView.m in Sources */,
+				D0BB07DB1B8C598000585CAE /* DKFilterView.m in Sources */,
+				D0BB07DC1B8C598000585CAE /* JKAssetsThumbnailView.m in Sources */,
+				D0BB07DD1B8C598000585CAE /* NSString+PJR.m in Sources */,
+				D0BB07DE1B8C598000585CAE /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				D0BB07DF1B8C598000585CAE /* main.m in Sources */,
+				D0BB07E01B8C598000585CAE /* NSMutableDictionary+KVO.m in Sources */,
+				D0BB07E11B8C598000585CAE /* ViewControllerManager.m in Sources */,
+				D0BB07E21B8C598000585CAE /* ImagePlayerView.m in Sources */,
+				D0BB07E31B8C598000585CAE /* MJRefreshStateHeader.m in Sources */,
+				D0BB07E41B8C598000585CAE /* NSString+CJStringValidator.m in Sources */,
+				D0BB07E51B8C598000585CAE /* JKAssetsGroupCell.m in Sources */,
+				D0BB07E61B8C598000585CAE /* JTImageLabel.m in Sources */,
+				D0BB07E71B8C598000585CAE /* UIViewController+Login.m in Sources */,
+				D0BB07E81B8C598000585CAE /* UIView+Extension.m in Sources */,
+				D0BB07E91B8C598000585CAE /* NSString+TrimingWhitespace.m in Sources */,
+				D0BB07EA1B8C598000585CAE /* MJRefreshAutoGifFooter.m in Sources */,
+				D0BB07EB1B8C598000585CAE /* MJRefreshGifHeader.m in Sources */,
+				D0BB07EC1B8C598000585CAE /* SHSPhoneTextField.m in Sources */,
+				D0BB07ED1B8C598000585CAE /* UIView+SeperatorLine.m in Sources */,
+				D0BB07EE1B8C598000585CAE /* RACSubscriber+AFProgressCallbacks.m in Sources */,
+				D0BB07EF1B8C598000585CAE /* UIImageViewAligned.m in Sources */,
+				D0BB07F01B8C598000585CAE /* UIView+ZZBInputBar.m in Sources */,
+				D0BB07F11B8C598000585CAE /* MJRefreshHeader.m in Sources */,
+				D0BB07F21B8C598000585CAE /* JKImagePickerController.m in Sources */,
+				D0BB07F31B8C598000585CAE /* UIImageView+EMWebCache.m in Sources */,
+				D0BB07F41B8C598000585CAE /* UIImage+EMMultiFormat.m in Sources */,
+				D0BB07F51B8C598000585CAE /* NYSegmentedControl.m in Sources */,
+				D0BB07F61B8C598000585CAE /* TPKeyboardAvoidingScrollView.m in Sources */,
+				D0BB07F71B8C598000585CAE /* NSString+URLEncode.m in Sources */,
+				D0BB07F81B8C598000585CAE /* EMSDWebImageCompat.m in Sources */,
+				D0BB07F91B8C598000585CAE /* JKAssetsCollectionFooterView.m in Sources */,
+				D0BB07FA1B8C598000585CAE /* UIColor+RGBValues.m in Sources */,
+				D0BB07FB1B8C598000585CAE /* amrFileCodec.mm in Sources */,
+				D0BB07FC1B8C598000585CAE /* UIImage+Tint.m in Sources */,
+				D0BB07FD1B8C598000585CAE /* JRNLocalNotificationCenter.m in Sources */,
+				D0BB07FE1B8C598000585CAE /* NSDate+Utilities.m in Sources */,
+				D0BB07FF1B8C598000585CAE /* SHSPhoneLogic.m in Sources */,
+				D0BB08001B8C598000585CAE /* AGEmojiPageView.m in Sources */,
+				D0BB08011B8C598000585CAE /* DKFilterCell.m in Sources */,
+				D0BB08021B8C598000585CAE /* INSPinterestPullToRefresh.m in Sources */,
+				D0BB08031B8C598000585CAE /* UIViewController+UIBarButtonItem.m in Sources */,
+				D0BB08041B8C598000585CAE /* UILabel+LabelAutoLenght.m in Sources */,
+				D0BB08051B8C598000585CAE /* AudioPlayerHelper.m in Sources */,
+				D0BB08061B8C598000585CAE /* Area.m in Sources */,
+				D0BB08071B8C598000585CAE /* INSInfiniteScrollBackgroundView.m in Sources */,
+				D0BB08081B8C598000585CAE /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				D0BB08091B8C598000585CAE /* NYSegmentLabel.m in Sources */,
+				D0BB080A1B8C598000585CAE /* MJRefreshAutoFooter.m in Sources */,
+				D0BB080B1B8C598000585CAE /* NSDictionary+MM.m in Sources */,
+				D0BB080C1B8C598000585CAE /* MJRefreshConst.m in Sources */,
+				D0BB080D1B8C598000585CAE /* UIView+MJExtension.m in Sources */,
+				D0BB080E1B8C598000585CAE /* UITableViewController+UIActivityIndicatorView.m in Sources */,
+				D0BB080F1B8C598000585CAE /* MZTimerLabel.m in Sources */,
+				D0BB08101B8C598000585CAE /* MJRefreshNormalHeader.m in Sources */,
+				D0BB08111B8C598000585CAE /* UIViewController+SVHUD.m in Sources */,
+				D0BB08121B8C598000585CAE /* HMSegmentedControl.m in Sources */,
+				D0BB08131B8C598000585CAE /* INSCirclePullToRefresh.m in Sources */,
+				D0BB08141B8C598000585CAE /* UIViewController+KNSemiModal.m in Sources */,
+				D0BB08151B8C598000585CAE /* MJRefreshFooter.m in Sources */,
+				D0BB08161B8C598000585CAE /* AreaPickerControl.m in Sources */,
+				D0BB08171B8C598000585CAE /* NSObject+ObjectMap.m in Sources */,
+				D0BB08181B8C598000585CAE /* UIButton+ImageWithLable.m in Sources */,
+				D0BB08191B8C598000585CAE /* JKAssets.m in Sources */,
+				D0BB081A1B8C598000585CAE /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				D0BB081B1B8C598000585CAE /* EMSDWebImageDownloader.m in Sources */,
+				D0BB081C1B8C598000585CAE /* TTGlobalUICommon.m in Sources */,
+				D0BB081D1B8C598000585CAE /* PhotoAlbumManager.m in Sources */,
+				D0BB081E1B8C598000585CAE /* UILocalNotification+Helpers.m in Sources */,
+				D0BB081F1B8C598000585CAE /* UIApplication+LocalNotificationsUtils.m in Sources */,
+				D0BB08201B8C598000585CAE /* MarginLabel.m in Sources */,
+				D0BB08221B8C598000585CAE /* UIView+EMWebCacheOperation.m in Sources */,
+				D0BB08231B8C598000585CAE /* LCActionSheet.m in Sources */,
+				D0BB08241B8C598000585CAE /* NSString+IdCheck.m in Sources */,
+				D0BB08251B8C598000585CAE /* EMSDImageCache.m in Sources */,
+				D0BB08261B8C598000585CAE /* JKUtil.m in Sources */,
+				D0BB08271B8C598000585CAE /* MKAnnotationView+EMWebCache.m in Sources */,
+				D0BB08281B8C598000585CAE /* DKFilterSectionHeaderView.m in Sources */,
+				D0BB08291B8C598000585CAE /* UIScrollView+UITouch.m in Sources */,
+				D0BB082A1B8C598000585CAE /* INSDefaultPullToRefresh.m in Sources */,
+				D0BB082B1B8C598000585CAE /* MJRefreshBackNormalFooter.m in Sources */,
+				D0BB082C1B8C598000585CAE /* MJRefreshBackFooter.m in Sources */,
+				D0BB082D1B8C598000585CAE /* EMSDWebImageDecoder.m in Sources */,
+				D0BB082E1B8C598000585CAE /* AFHTTPRequestOperationManager+RACSupport.m in Sources */,
+				D0BB082F1B8C598000585CAE /* INSLappsyInfiniteIndicator.m in Sources */,
+				D0BB08301B8C598000585CAE /* Province.m in Sources */,
+				D0BB08311B8C598000585CAE /* AccountManager.m in Sources */,
+				D0BB08321B8C598000585CAE /* NSObject+TextLenght.m in Sources */,
+				D0BB08331B8C598000585CAE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				D0BB08341B8C598000585CAE /* AFNetworkReachabilityManager+RAC.m in Sources */,
+				D0BB08351B8C598000585CAE /* UIScrollView+MJExtension.m in Sources */,
+				D0BB08361B8C598000585CAE /* NSString+AvatarString.m in Sources */,
+				D0BB08371B8C598000585CAE /* UIImageView+EMHighlightedWebCache.m in Sources */,
+				D0BB08381B8C598000585CAE /* DWURecyclingAlert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		D04A7AE71B841C0500819C9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D04A7ACB1B841C0500819C9D /* QH */;
+			target = D04A7ACB1B841C0500819C9D /* QH_Dev */;
 			targetProxy = D04A7AE61B841C0500819C9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2081,7 +2518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
-				INFOPLIST_FILE = QH/Info.plist;
+				INFOPLIST_FILE = QH/QH_Dev.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2098,7 +2535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
-				INFOPLIST_FILE = QH/Info.plist;
+				INFOPLIST_FILE = QH/QH_Dev.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2143,6 +2580,40 @@
 			};
 			name = Release;
 		};
+		D0BB084D1B8C598000585CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5DEBC3786432A97BADDA0B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
+				INFOPLIST_FILE = QH/QH_Dev.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QH/Vendors/ZCAddressBook/UMSocial_Sdk_4.2.1",
+					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
+				);
+				PRODUCT_NAME = "QH copy";
+			};
+			name = Debug;
+		};
+		D0BB084E1B8C598000585CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6344A016AFB1F507E5AF4D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
+				INFOPLIST_FILE = QH/QH_Dev.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QH/Vendors/ZCAddressBook/UMSocial_Sdk_4.2.1",
+					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
+				);
+				PRODUCT_NAME = "QH copy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2155,7 +2626,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D04A7AEF1B841C0500819C9D /* Build configuration list for PBXNativeTarget "QH" */ = {
+		D04A7AEF1B841C0500819C9D /* Build configuration list for PBXNativeTarget "QH_Dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D04A7AF01B841C0500819C9D /* Debug */,
@@ -2169,6 +2640,15 @@
 			buildConfigurations = (
 				D04A7AF31B841C0500819C9D /* Debug */,
 				D04A7AF41B841C0500819C9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BB084C1B8C598000585CAE /* Build configuration list for PBXNativeTarget "QH_Dis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BB084D1B8C598000585CAE /* Debug */,
+				D0BB084E1B8C598000585CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

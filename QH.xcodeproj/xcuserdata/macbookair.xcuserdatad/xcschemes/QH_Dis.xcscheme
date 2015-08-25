@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D04A7ACB1B841C0500819C9D"
-               BuildableName = "QH.app"
-               BlueprintName = "QH"
-               ReferencedContainer = "container:QH.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D04A7AE41B841C0500819C9D"
-               BuildableName = "QHTests.xctest"
-               BlueprintName = "QHTests"
+               BlueprintIdentifier = "D0BB07911B8C598000585CAE"
+               BuildableName = "QH copy.app"
+               BlueprintName = "QH_Dis"
                ReferencedContainer = "container:QH.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D04A7AE41B841C0500819C9D"
-               BuildableName = "QHTests.xctest"
-               BlueprintName = "QHTests"
-               ReferencedContainer = "container:QH.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D04A7ACB1B841C0500819C9D"
-            BuildableName = "QH.app"
-            BlueprintName = "QH"
+            BlueprintIdentifier = "D0BB07911B8C598000585CAE"
+            BuildableName = "QH copy.app"
+            BlueprintName = "QH_Dis"
             ReferencedContainer = "container:QH.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,9 +52,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D04A7ACB1B841C0500819C9D"
-            BuildableName = "QH.app"
-            BlueprintName = "QH"
+            BlueprintIdentifier = "D0BB07911B8C598000585CAE"
+            BuildableName = "QH copy.app"
+            BlueprintName = "QH_Dis"
             ReferencedContainer = "container:QH.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,9 +71,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D04A7ACB1B841C0500819C9D"
-            BuildableName = "QH.app"
-            BlueprintName = "QH"
+            BlueprintIdentifier = "D0BB07911B8C598000585CAE"
+            BuildableName = "QH copy.app"
+            BlueprintName = "QH_Dis"
             ReferencedContainer = "container:QH.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
