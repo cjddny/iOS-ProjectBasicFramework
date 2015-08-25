@@ -54,5 +54,11 @@
 #define KBaiduMapKey @"d0jqHI5ybsxSSOneCXAbGIVa"
 //instabug
 #define kInstabugKey @"b9642a28e0d7563108e0ef02768ab375"
+//fir bugHD token -------- 正式发布后可考虑去掉
+#define FIRTOEKN @"bf7bb13e95c69143b6e3f48d5b4c039a"
+
+//七牛基础网址
+#define ZZBQiniuAddress @"http://zzb-api.qiniudn.com/"
+
 
 #endif

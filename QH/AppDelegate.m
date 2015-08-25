@@ -49,10 +49,38 @@
 
 
 #pragma mark -- UI
+//用于刷新，及新建主视图
 - (void)initDrawer
 {
     self.window.rootViewController = [LandingTabViewController new];
 }
+
+//app自定义
+-(void)configAppSetting
+{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:AppThemeColor];
+    
+    NSDictionary *attributesTitle = [NSDictionary dictionaryWithObjectsAndKeys:
+                                     AppThemeColor,NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:19],NSFontAttributeName,nil];
+    [[UINavigationBar appearance]setTitleTextAttributes:attributesTitle];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
+    
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                AppThemeColor,NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:17],NSFontAttributeName,nil];
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes:attributes
+                                                forState:UIControlStateNormal];
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-1000, -1000)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:AppThemeColor, NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:13],NSFontAttributeName, nil] forState:UIControlStateSelected];
+    // set the text color for unselected state
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor], NSForegroundColorAttributeName,[UIFont boldSystemFontOfSize:13],NSFontAttributeName, nil] forState:UIControlStateNormal];
+}
+
 
 
 #pragma mark -- 3rd Part setting
