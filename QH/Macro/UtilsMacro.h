@@ -362,9 +362,6 @@ return _instance; \
 #define curStory  [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil]
 //--------------------------
 
-//消除指定cell的分割线
-//#define cellNoSperator (IsAfterIOS8)?cell.layoutMargins=UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width):cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width)
-
 #define cellNoSperator cell.separatorInset = (IsAfterIOS8)?UIEdgeInsetsMake(15, 0, 0, kScreen_Width-15):UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width)
 
 
