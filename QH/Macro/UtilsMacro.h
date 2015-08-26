@@ -20,10 +20,9 @@
 #define RGB(r,g,b)          RGBA(r,g,b,1.0f)
 
 // 需第三方类库——————FHColor
-#define colorFromHex( hexValue ) ( [FHColor colorWithHexStringN:hexValue] )
-#define colorFromHexAlpha( hexValue, alpha ) ( [FHColor colorWithHexStringN:hexValue alpha:alpha] )
+#define colorFromHex( _hexValue_ ) ( [FHColor colorWithHexStringN:_hexValue_] )
+#define colorFromHexAlpha( _hexValue_, _alpha_ ) ( [FHColor colorWithHexStringN:_hexValue_ alpha:_alpha_] )
 //----------------------颜色----------------------------
-
 
 
 #pragma mark- 屏幕
