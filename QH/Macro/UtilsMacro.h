@@ -9,52 +9,28 @@
 #ifndef ZZB_UtilsMacro_h
 #define ZZB_UtilsMacro_h
 
-//color
-#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
-#define colorFromHex( hexValue ) ( [FHColor colorWithHexStringN:hexValue] )
-
-//空值
-#define NullStrable(value) (value != nil ? value : @"")
-#define Nullable(value) (value != nil ? value : @"null")
-#define NullableBool(value) (value != nil ? value : [NSNumber numberWithBool:NO])
-
-#define NullableIntValue(value) (value != nil ? value : [NSNumber numberWithInteger:0])
-
-#define NullableTimestamp(value) (value != nil ? value : [NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]])
-
-
-//alert
-#define KAlert(_S_)     [[[UIAlertView alloc] initWithTitle:@"提示" message:_S_ delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil]  show]
-#endif
-
-#ifndef Sensoro_Configuration_Utility_BMDefineUtils_h
-#define Sensoro_Configuration_Utility_BMDefineUtils_h
 
 #pragma mark- 颜色
 //----------------------颜色----------------------------
 // 获取颜色--RGBA
 #define RGBA(r, g, b, a)    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGBACOLOR(r,g,b,a) RGBA(r, g, b, a)
+
 // 获取颜色--RGB
 #define RGB(r,g,b)          RGBA(r,g,b,1.0f)
-// 获取颜色--十六进制（十六进制->十进制）0xFFEEAA
-#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-//----------------------颜色----------------------------
 
+// 需第三方类库——————FHColor
+#define colorFromHex( hexValue ) ( [FHColor colorWithHexStringN:hexValue] )
+#define colorFromHexAlpha( hexValue, alpha ) ( [FHColor colorWithHexStringN:hexValue alpha:alpha] )
+//----------------------颜色----------------------------
 
 
 
 #pragma mark- 屏幕
 //----------------------屏幕----------------------------
-// Retina屏幕判断
-#define isRetina ([[UIScreen mainScreen] scale]==2)
 // Pad设备判断--Xib或Storyboard
 #define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-// 4.0屏幕判断
-#define isR4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
-// 3.5屏幕判断
-#define isNotR4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
 //----------------------屏幕----------------------------
-
 
 
 
@@ -79,9 +55,15 @@
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-
 //----------------------系统版本----------------------------
 
+
+
+#pragma mark- 系统版本
+//----------------------字体----------------------------
+#define kBoldFont(_size_) [UIFont boldSystemFontOfSize:_size_]
+#define kSystemFont(_size_) [UIFont systemFontOfSize:_size_]
+//----------------------字体----------------------------
 
 
 
@@ -95,9 +77,6 @@
 #define kContent_CenterY  kContent_Height/2
 //----------------------屏幕大小----------------------------
 
-
-
-
 //设备屏幕尺寸
 //----------------------备屏幕尺寸----------------------------
 #define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
@@ -106,7 +85,6 @@
 #define kScreen_CenterX  kScreen_Width/2
 #define kScreen_CenterY  kScreen_Height/2
 //----------------------备屏幕尺寸----------------------------
-
 
 
 
@@ -134,7 +112,7 @@
 
 
 
-
+#pragma mark- 屏幕固定高度
 //屏幕固定高度
 //----------------------屏幕固定高度----------------------------
 #define UI_NAVIGATION_BAR_HEIGHT        44
@@ -142,7 +120,6 @@
 #define UI_TAB_BAR_HEIGHT               49
 #define UI_STATUS_BAR_HEIGHT            20
 //----------------------屏幕固定高度----------------------------
-
 
 
 
@@ -165,8 +142,6 @@
 #define TempSubDirectory(dir) [NSTemporaryDirectory() stringByAppendingPathComponent:dir]
 
 //----------------------文件路径----------------------------
-
-
 
 
 
@@ -201,8 +176,12 @@
 #define DNSLogSize(p)   NSLog(@"%f,%f", p.width, p.height);
 //----------------------自定义输出----------------------------
 
+//----------------------alert提示----------------------------
+#define KAlert(_S_)     [[[UIAlertView alloc] initWithTitle:@"提示" message:_S_ delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil]  show]
+//----------------------alert提示----------------------------
 
 
+#pragma mark-内存
 //----------------------内存----------------------------
 
 //使用ARC和不使用ARC
@@ -219,80 +198,88 @@
 #define SAFE_DELETE(P) if(P) { [P release], P = nil; }
 
 #define SAFE_RELEASE(x) [x release];x=nil
-
-
 //----------------------内存----------------------------
 
 
-
+#pragma mark-图片
 //----------------------图片----------------------------
-
 //读取本地图片
 #define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
-
 //定义UIImage对象
 #define IMAGE(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
-
 //定义UIImage对象
 #define ImageNamed(_pointer) [UIImage imageNamed:[UIUtil imageName:_pointer]]
-
 //建议使用前两种宏定义,性能高于后者
 //----------------------图片----------------------------
 
 
+#pragma mark-空值
+//----------------------空值----------------------------
+#define NullStrable(value) (value != nil ? value : @"")
+#define Nullable(value) (value != nil ? value : @"null")
+#define NullableBool(value) (value != nil ? value : [NSNumber numberWithBool:NO])
+#define NullableIntValue(value) (value != nil ? value : [NSNumber numberWithInteger:0])
+#define NullableTimestamp(value) (value != nil ? value : [NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]])
+//----------------------空值----------------------------
 
+
+#pragma mark-系统环境
+//----------------------系统环境----------------------------
 //获取当前语言
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
-
-//方正黑体简体字体定义
-#define FONT(F) [UIFont fontWithName:@"FZHTJW--GB1-0" size:F]
-
-//设置View的tag属性
-#define VIEWWITHTAG(_OBJECT, _TAG)    [_OBJECT viewWithTag : _TAG]
-//程序的本地化,引用国际化的文件
-#define MyLocal(x, ...) NSLocalizedString(x, nil)
-
-
-//G－C－D
-#define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
-#define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
-
 //NSUserDefaults 实例化
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
+//当前storyboard
+#define curStory  [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil]
+//当前appdelegate
+#define APP_DELEGATE [(AppDelegate*)[UIApplication sharedApplication] delegate]
+//当前keyWindow
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+//程序的本地化,引用国际化的文件
+#define MyLocal(x, ...) NSLocalizedString(x, nil)
+//根据tag获取view
+#define VIEWWITHTAG(_OBJECT, _TAG)    [_OBJECT viewWithTag : _TAG]
+
+//----------------------系统环境----------------------------
 
 
-//由角度获取弧度 有弧度获取角度
-#define degreesToRadian(x) (M_PI * (x) / 180.0)
-#define radianToDegrees(radian) (radian*180.0)/(M_PI)
+
+#pragma mark-cell
+//----------------------Cell----------------------------
+//去分割线
+#define cellNoSperator cell.separatorInset = (IsAfterIOS8)?UIEdgeInsetsMake(15, 0, 0, kScreen_Width-15):UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width)
+//设置选中颜色
+#define cellSelectColor(_color_) \
+self.selectedBackgroundView = [[UIView alloc] initWithFrame:self.frame]; \
+self.selectedBackgroundView.backgroundColor = _color_; \
+//----------------------Cell----------------------------
+
+
+#pragma mark-GCD
+//----------------------GCD----------------------------
+//并行线程
+#define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+//串行线程
+#define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+//----------------------GCD----------------------------
 
 
 
-
-// block self
-#define WEAKSELF typeof(self) __weak weakSelf = self;
-#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
-
-#pragma mark- Action
-// openURL
+#pragma mark- 系统openUrl行为
+//----------------------系统openUrl行为----------------------------
+// openURL 打开应用
 #define canOpenURL(appScheme) ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appScheme]])
-
 #define openURL(appScheme) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appScheme]])
-
 // telphone
 #define canTel   ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tel:"]])
-
 #define tel(phoneNumber)       ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",phoneNumber]]])
-
 #define telprompt(phoneNumber) ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt:%@",phoneNumber]]])
+//----------------------系统openUrl行为----------------------------
 
 
-//弹出信息
-#define ALERT(msg) [[[UIAlertView alloc] initWithTitle:nil message:msg delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil] show]
 
-//单例
-#ifndef Funny_Singleton_h
-#define Funny_Singleton_h
-
+#pragma mark -- 单例
+//----------------------单例----------------------------
 #define SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(classname) \
 \
 + (classname*) sharedInstance;
@@ -319,59 +306,27 @@ return [self sharedInstance]; \
 { \
 return self; \
 }
+//----------------------单例----------------------------
+
+
+
+#pragma mark -- 角度弧度
+//----------------------角度弧度----------------------------
+//由角度获取弧度
+#define degreesToRadian(x) (M_PI * (x) / 180.0)
+//由弧度获取角度
+#define radianToDegrees(radian) (radian*180.0)/(M_PI)
+//----------------------角度弧度----------------------------
+
+
+
+#pragma mark -- 强弱引用 self
+//----------------------强弱引用 self----------------------------
+#define WEAKSELF typeof(self) __weak weakSelf = self;
+#define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
+//----------------------强弱引用 self----------------------------
+
 
 #endif
 
-
-/*
- 专门用来保存单例代码
- 最后一行不要加 \
- */
-//----------------------单粒----------------------------
-// @interface
-#define singleton_interface(className) \
-+ (className *)shared##className;
-
-
-// @implementation
-#define singleton_implementation(className) \
-static className *_instance; \
-+ (id)allocWithZone:(NSZone *)zone \
-{ \
-static dispatch_once_t onceToken; \
-dispatch_once(&onceToken, ^{ \
-_instance = [super allocWithZone:zone]; \
-}); \
-return _instance; \
-} \
-+ (className *)shared##className \
-{ \
-static dispatch_once_t onceToken; \
-dispatch_once(&onceToken, ^{ \
-_instance = [[self alloc] init]; \
-}); \
-return _instance; \
-}
-//----------------------单粒----------------------------
-
-//-----------固定按钮间距
-#define kButtonSpaceWidth 14
-
-
-//--------cur storyboard-------------------------------
-#define curStory  [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil]
-//--------------------------
-
-#define cellNoSperator cell.separatorInset = (IsAfterIOS8)?UIEdgeInsetsMake(15, 0, 0, kScreen_Width-15):UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width)
-
-
-#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
-
-#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
-
-#define KNOTIFICATION_LOGINCHANGE @"loginStateChange"
-
-#define CHATVIEWBACKGROUNDCOLOR [UIColor colorWithRed:0.936 green:0.932 blue:0.907 alpha:1]
-
-#endif
 

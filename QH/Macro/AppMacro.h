@@ -71,21 +71,6 @@
 #define kAppHasNewVersionKey @"kAppHasNewVersionKey"
 #define kNewIntroduceKey @"kNewIntroduceKey"
 
-/**
- *  AppDelegate
- */
-#define APP_DELEGATE [(AppDelegate*)[UIApplication sharedApplication] delegate]
-
-/**
- *  kKeyWindow
- */
-#define kKeyWindow [UIApplication sharedApplication].keyWindow
-
-/**
- *  font
- */
-#define kBoldFont(_size_) [UIFont boldSystemFontOfSize:_size_]
-#define kSystemFont(_size_) [UIFont systemFontOfSize:_size_]
 
 //---------------------app配色------------------
 #define kAppThemeColor  colorFromHex(@"00a8b8")
