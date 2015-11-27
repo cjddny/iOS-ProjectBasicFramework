@@ -2518,14 +2518,14 @@
 			baseConfigurationReference = 3B5DEBC3786432A97BADDA0B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/QH/Vendors/ZCAddressBook/UMSocial_Sdk_4.2.1",
 					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2538,14 +2538,14 @@
 			baseConfigurationReference = AF6344A016AFB1F507E5AF4D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/QH/Vendors/ZCAddressBook/UMSocial_Sdk_4.2.1",
 					"$(PROJECT_DIR)/QH/Vendors/VoiceConverter_AMR/include",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2592,7 +2592,8 @@
 			baseConfigurationReference = 3B5DEBC3786432A97BADDA0B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -2611,7 +2612,8 @@
 			baseConfigurationReference = AF6344A016AFB1F507E5AF4D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "QH/QH-Prefix.pch";
 				INFOPLIST_FILE = QH/QH_Dev.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

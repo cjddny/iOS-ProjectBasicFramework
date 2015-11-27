@@ -1,31 +1,30 @@
 PODS:
-  - ActionSheetPicker-3.0 (1.7.1)
-  - AFNetworking (2.6.0):
-    - AFNetworking/NSURLConnection (= 2.6.0)
-    - AFNetworking/NSURLSession (= 2.6.0)
-    - AFNetworking/Reachability (= 2.6.0)
-    - AFNetworking/Security (= 2.6.0)
-    - AFNetworking/Serialization (= 2.6.0)
-    - AFNetworking/UIKit (= 2.6.0)
-  - AFNetworking/NSURLConnection (2.6.0):
+  - ActionSheetPicker-3.0 (2.0.3)
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.0):
+  - AFNetworking/NSURLSession (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.0)
-  - AFNetworking/Security (2.6.0)
-  - AFNetworking/Serialization (2.6.0)
-  - AFNetworking/UIKit (2.6.0):
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - DACircularProgress (2.3.1)
   - DCKeyValueObjectMapping (1.5)
-  - DZNEmptyDataSet (1.7.1)
+  - DZNEmptyDataSet (1.6.1)
   - DZNSegmentedControl (1.3.2)
-  - FIR.im (1.2.0)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
   - FMDB/common (2.5)
@@ -35,10 +34,10 @@ PODS:
   - FMDB/standard (2.5):
     - FMDB/common
   - FontAwesome+iOS (0.1.4)
-  - HappyDNS (0.2.1)
-  - JazzHands (2.0.3)
+  - HappyDNS (0.2.3)
+  - JazzHands (2.0.7)
   - JSBadgeView (1.4.1)
-  - Masonry (0.6.2)
+  - Masonry (0.6.3)
   - MBProgressHUD (0.9.1)
   - MMDrawerController (0.5.7):
     - MMDrawerController/Core (= 0.5.7)
@@ -57,12 +56,12 @@ PODS:
     - MBProgressHUD (~> 0.9)
     - SDWebImage (!= 3.7.2, ~> 3.7)
   - NYXImagesKit (2.3)
-  - pop (1.0.7)
+  - pop (1.0.8)
   - PPiAwesomeButton (1.5.2):
     - FontAwesome+iOS
-  - Qiniu (7.0.12):
+  - Qiniu (7.0.16):
     - AFNetworking (~> 2.0)
-    - HappyDNS (~> 0.1)
+    - HappyDNS (~> 0.2)
   - Reachability (3.1.1)
   - ReactiveCocoa (2.2.4):
     - ReactiveCocoa/Core (= 2.2.4)
@@ -92,13 +91,12 @@ DEPENDENCIES:
   - ActionSheetPicker-3.0
   - AFNetworking
   - DCKeyValueObjectMapping
-  - DZNEmptyDataSet
+  - DZNEmptyDataSet (~> 1.6.1)
   - DZNSegmentedControl
-  - FIR.im (~> 1.2.0)
   - FMDB
   - FMDB/SQLCipher (~> 2.2)
   - FontAwesome+iOS
-  - JazzHands
+  - JazzHands (= 2.0.7)
   - JSBadgeView
   - Masonry
   - MMDrawerController (~> 0.5.7)
@@ -119,26 +117,25 @@ DEPENDENCIES:
   - YTKKeyValueStore
 
 SPEC CHECKSUMS:
-  ActionSheetPicker-3.0: 28a795c376f9d76850cb56eaf7dd5cf9a9088223
-  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  ActionSheetPicker-3.0: 11f2053085d3088dc1ef9d38a9f11c18b528dd9e
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DCKeyValueObjectMapping: c2eb5a6529da100b2e49ef6a599663578051f077
-  DZNEmptyDataSet: 2a398066c2bf5848f7f693fb50954b5064debd12
+  DZNEmptyDataSet: 3d31c27758230f03c71199f8c522bcfa99fba16c
   DZNSegmentedControl: b78b19d0b11d521a2be56ecff8a8a25d09a289d4
-  FIR.im: e5c7367a35adcd796f30f176f059356c330c0c2e
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   FontAwesome+iOS: 9070b682a9255ca0fdc34bcfb129ad0ba2b73b87
-  HappyDNS: 8eb3c929ee6143eb56bfddfc9e6052ca9429699c
-  JazzHands: 0f3c8578f33f45b2fe73975deed6a5f02f9c22d3
+  HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
+  JazzHands: 13b2930840957cdbb830e1d52434fc2342b050d8
   JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
-  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
-  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   PPiAwesomeButton: 16f7279582fd36f65186b24b83ef876217363eb5
-  Qiniu: 1fb5191b3bc1edb65b2da3d905b8281e15bd1d5c
+  Qiniu: 51a8702cddc02b50867e10cef99291b9a8a006b1
   Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
   ReactiveCocoa: 78d9d1057f6e2595a67285b5adb0c90d0fc2237c
   RKNotificationHub: d80905a948c79c11673345f807133a0bfd17e320
@@ -151,4 +148,4 @@ SPEC CHECKSUMS:
   VBFPopFlatButton: 782344da63f104c279a857d806e065117a7e1196
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.38.2
